@@ -16,11 +16,11 @@
     <link rel="icon" href="/favicon.ico" />
     <link rel="manifest" href="/manifest.json" />
     <link rel="stylesheet" href="./css/framework7.bundle.min.css" />
-    <link rel="stylesheet" href="./css/app.css" />
     <link rel="stylesheet" href="./css/icons.css" />
     <link rel="stylesheet" href="./css/mapbox-gl.css" rel="stylesheet" />
     <link rel="stylesheet" href="./css/mapbox-gl-geocoder.css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./css/app.css" />
     <!--script>
         if ("serviceWorker" in navigator) {
             window.addEventListener("load", () => {
@@ -33,14 +33,19 @@
 <body>
     <div id="app">
         <div class="views safe-areas" id="app-view">
-            <div class="view view-main view-init"></div>
+            <div class="view view-main view-init">
+
+            </div>
         </div>
-        <a class="display-none" data-transition="f7-circle" href="/login/" data-view=".view-main" id="login">a</a>
-        <a class="display-none" data-transition="f7-circle" href="/customer/" data-view=".view-main" id="customer">b</a>
-        <a class="display-none" data-transition="f7-circle" href="/servicecentre/" data-view=".view-main"
-            id="scentre">c</a>
+        <a class="display-none" data-transition="f7-circle" href="/intro/" data-view=".view-main" id="intro"></a>
+        <a class="display-none" data-transition="f7-circle" href="/user/" data-view=".view-main" id="user"></a>
+        <a class="display-none" data-transition="f7-circle" href="/dept/" data-view=".view-main" id="dept"></a>
+        <a class="display-none" data-transition="f7-circle" href="/user-login/" data-view=".view-main"
+            id="user-login"></a>
+        <a class="display-none" data-transition="f7-circle" href="/centre-login/" data-view=".view-main"
+            id="dept-login"></a>
     </div>
-    <script defer src="./js/firebase/firebase-app.js"></script>
+    <script defer src="./js/firebase/firebase-app-compat.js"></script>
     <script defer src="./js/modules/framework7.bundle.min.js"></script>
     <script defer src="./js/routes.js"></script>
     <script defer src="./js/modules/mapbox-gl.js"></script>

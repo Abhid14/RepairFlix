@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.appchooseDept {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.rsel{
+  border-radius: 50px;
+}
+.appav {
+  background: rgb(237, 187, 79);
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  margin-top: 10px;
+  margin-inline: 30px;
+}
